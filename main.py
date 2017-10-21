@@ -1,12 +1,9 @@
-
 from random import randint
 #from test2 import *
 #^^^ this grabs stuff form a different pythond file, like variables and nubmers
-print("hello")
-
-var = input('what will i write back to you:')
-
-print(var)
+print("Initilizing Character Generator")
+#var = input('what will i write back to you:')
+#print(var)
 
 
 #name = input("Name: ")
@@ -15,17 +12,15 @@ classlevel = input("class level:")
 #randints or something
 
 
-
-#
 # get_stat that returns one value
 #  def thing():
 #      thing = randint(low_int, high_int)
 #      return thing
-def classhealthstuff():
+def classhealthpoints():
 	hitdice = randint(0,7)
 	return hitdice
 	
-hitdie = classhealthstuff()
+hitdie = classhealthpoints()
 #classhitdie = hitdie * classlevel
 
 def get_class(hitdie):
@@ -46,11 +41,36 @@ def get_health(hitdie):
     hp = [12, 6, 8, 10, 8, 10, 6, 6]
 #    try:
     health = hp[hitdie]
-    health1 = int(health) * int(classlevel)
-    return health1
+    healthcalc = int(health) * int(classlevel)
+    return healthcalc
 #    except:
 #        return hp[0]
-		
+
+
+
+
+def alignment(hitdie):
+    align = ["Lawful Good", "Lawful Neutral", "Lawful Evil", "Neutral Good", "True Neutral", "Neutral Evil", "Chaotic Good", "Chaotic Neutral", "Chaotic Evil"]
+    if(hitdie) = 0
+        classalign = randint[3,8]
+    if(hitdie) = 1
+        classalign = randint[0,8]
+    if(hitdie) = 2
+        classalign = randint[0,8]
+    if(hitdie) = 3
+        classalign = randint[0,8]
+    if(hitdie) = 4
+	classalign = randint[0,8]
+    if(hitdie) = 5
+        classalign = randint[0,8]
+    if(hitdie) = 6
+        classalign = randint[0,8]
+    if(hitdie) = 7
+        classalign = randint[0,8]
+
+
+
+
 def get_age():
     young_l = 14
     young_o = 27
