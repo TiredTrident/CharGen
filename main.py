@@ -10,7 +10,7 @@ print(var)
 
 
 #name = input("Name: ")
-#gender = input("gneder")
+#gender = input("Gender")
 classlevel = input("class level:")
 #randints or something
 
