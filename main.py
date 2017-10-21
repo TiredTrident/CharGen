@@ -58,14 +58,18 @@ def alignment(hitdie):
     if(hitdie) = 2
         classalign = randint[0,8]
     if(hitdie) = 3
-        classalign = randint[0,8]
+        classalign = randint[3,5]
     if(hitdie) = 4
 	classalign = randint[0,8]
     if(hitdie) = 5
         classalign = randint[0,8]
     if(hitdie) = 6
-        classalign = randint[0,8]
+        classalign = randint[1]
     if(hitdie) = 7
+        classalign = randint[0,8]
+    if(hitdie) = 8
+        classalign = randint[0,8]
+    if(hitdie) = 9
         classalign = randint[0,8]
 
 
