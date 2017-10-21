@@ -1,38 +1,33 @@
-
 from random import randint
 #from test2 import *
 #^^^ this grabs stuff form a different pythond file, like variables and nubmers
-print("hello")
-
-var = input('what will i write back to you:')
-
-print(var)
+print("Initilizing Character Generator")
+#var = input('what will i write back to you:')
+#print(var)
 
 
 #name = input("Name: ")
-#gender = input("gneder")
-classlevel = input("class level:")
+#gender = input("Gender")
+classlevel = input("Class Level:")
 #randints or something
 
 
-
-#
 # get_stat that returns one value
 #  def thing():
 #      thing = randint(low_int, high_int)
 #      return thing
-def classhealthstuff():
-	hitdice = randint(0,7)
+def classhealthpoints():
+	hitdice = randint(0,9)
 	return hitdice
 	
-hitdie = classhealthstuff()
+hitdie = classhealthpoints()
 #classhitdie = hitdie * classlevel
 
 def get_class(hitdie):
-    classes = ["Barbarian", "Bard", "Cleric", "Fighter", "Monk", "Ranger", "Sorcerer", "Wizard"]
+    classes = ["Barbarian", "Bard", "Cleric","Druid", "Fighter", "Monk", "Paladin", "Ranger", "Sorcerer", "Wizard"]
 #   hp = ["12", "6", "8", "10", "8", "10", "6", "6"]
     try:
-#       jobbo = randint(0,7)
+#       jobbo = randint(0,9)
 #		health = hp[jobbo]
 #       class = classes[hitdie]
         return classes[hitdie]
@@ -43,14 +38,43 @@ def get_class(hitdie):
 #		return health
 
 def get_health(hitdie):
-    hp = [12, 6, 8, 10, 8, 10, 6, 6]
+    hp = [12, 6, 8, 8, 10, 8, 10, 8, 6, 6]
 #    try:
     health = hp[hitdie]
-    health1 = int(health) * int(classlevel)
-    return health1
+    healthcalc = int(health) * int(classlevel)
+    return healthcalc
 #    except:
 #        return hp[0]
-		
+
+
+
+
+def alignment(hitdie):
+    align = ["Lawful Good", "Lawful Neutral", "Lawful Evil", "Neutral Good", "True Neutral", "Neutral Evil", "Chaotic Good", "Chaotic Neutral", "Chaotic Evil"]
+    if(hitdie) = 0
+        classalign = randint[3,8]
+    if(hitdie) = 1
+        classalign = randint[0,8]
+    if(hitdie) = 2
+        classalign = randint[0,8]
+    if(hitdie) = 3
+        classalign = randint[3,5]
+    if(hitdie) = 4
+	classalign = randint[0,8]
+    if(hitdie) = 5
+        classalign = randint[0,8]
+    if(hitdie) = 6
+        classalign = randint[1]
+    if(hitdie) = 7
+        classalign = randint[0,8]
+    if(hitdie) = 8
+        classalign = randint[0,8]
+    if(hitdie) = 9
+        classalign = randint[0,8]
+
+
+
+
 def get_age():
     young_l = 14
     young_o = 27
