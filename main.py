@@ -8,7 +8,7 @@ print("Initilizing Character Generator")
 
 #name = input("Name: ")
 #gender = input("Gender")
-classlevel = input("class level:")
+classlevel = input("Class Level:")
 #randints or something
 
 
@@ -17,17 +17,17 @@ classlevel = input("class level:")
 #      thing = randint(low_int, high_int)
 #      return thing
 def classhealthpoints():
-	hitdice = randint(0,7)
+	hitdice = randint(0,9)
 	return hitdice
 	
 hitdie = classhealthpoints()
 #classhitdie = hitdie * classlevel
 
 def get_class(hitdie):
-    classes = ["Barbarian", "Bard", "Cleric", "Fighter", "Monk", "Ranger", "Sorcerer", "Wizard"]
+    classes = ["Barbarian", "Bard", "Cleric","Druid", "Fighter", "Monk", "Paladin", "Ranger", "Sorcerer", "Wizard"]
 #   hp = ["12", "6", "8", "10", "8", "10", "6", "6"]
     try:
-#       jobbo = randint(0,7)
+#       jobbo = randint(0,9)
 #		health = hp[jobbo]
 #       class = classes[hitdie]
         return classes[hitdie]
@@ -38,7 +38,7 @@ def get_class(hitdie):
 #		return health
 
 def get_health(hitdie):
-    hp = [12, 6, 8, 10, 8, 10, 6, 6]
+    hp = [12, 6, 8, 8, 10, 8, 10, 8, 6, 6]
 #    try:
     health = hp[hitdie]
     healthcalc = int(health) * int(classlevel)
