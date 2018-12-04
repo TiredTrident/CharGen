@@ -1,6 +1,5 @@
 from random import randint
 #from test2 import *
-#^^^ this grabs stuff form a different pythond file, like variables and nubmers
 print("Initilizing Character Generator")
 #var = input('what will i write back to you:')
 #print(var)
@@ -12,7 +11,7 @@ classlevel = input("Class Level:")
 #randints or something
 
 
-# get_stat that returns one value
+# get_stat 
 #  def thing():
 #      thing = randint(low_int, high_int)
 #      return thing
@@ -106,7 +105,7 @@ dex = get_stat(6)
 job = get_class(hitdie)
 
 text_file = open("Character.txt", "w")
-#FIX THIS, YOU CAN LEARN PYTHON, NERD.
+
 text_file.write("HP:" + str(get_health(hitdie)) + "\n")
 text_file.write("Class:" + str(get_class(hitdie)) + "\n")
 text_file.write("Age:" + str(get_age()) + "\n")
